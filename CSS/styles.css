@@ -4,7 +4,8 @@
     --secondary-text-color: #757575;
     --white-color: #FFFFFF;
     --background-color: #2F303A;
-    ;
+    --logo-black-color: #000000;
+    --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -45,13 +46,13 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    /* letter-spacing: 0.03em;*/
     color: var(--acent-color);
 }
 
 /*Часть логотипа оборачиваем в span, чтобы поменять цвет части логотипа*/
 .logo-color {
-    color: black;
+    color: var(--logo-black-color);
 
 }
 
@@ -118,7 +119,19 @@
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background: var(--acent-color);
+
 }
+
+/* на кнопке должен быть хвер и фокус, но мы пока не знаем какой*/
+/*.modal-btn:hover,
+.modal-btn:focus {}. поэтому задаю пока томато*/
+
+.modal-btn:hover,
+.modal-btn:focus {
+    color: tomato;
+    background: var(--primary-text-color)
+}
+
 
 /*========================/HERO============================*/
 /* на кнопке должен быть хвер и фокус, но мы пока не знаем какой*/
@@ -170,18 +183,38 @@
     background-color: var(--background-color)
 }
 
+.footer .logo-color {
+    color: var(--white-color);
+
+}
+
 .map,
 .footer-link {
     font-size: 14px;
     line-height: 1.71;
     color: var(--white-color);
+
 }
 
 .footer-link {
 
 
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-link-color)
 }
+
+.map:focus,
+.map:hover {
+    color: var(--acent-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--acent-color);
+
+}
+
+
+
 
 
 
