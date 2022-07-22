@@ -6,6 +6,7 @@
     --background-color: #2F303A;
     --logo-black-color: #000000;
     --footer-link-color: rgba(255, 255, 255, 0.6);
+    --nav-button-bg-color: #F5F4FA;
 }
 
 
@@ -112,7 +113,9 @@
     background-color: var(--background-color);
 }
 
+/*Странно, но почему-то кнопка не наследует свойства*/
 .modal-btn {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -124,7 +127,7 @@
 
 }
 
-/* на кнопке должен быть хвер и фокус, но мы пока не знаем какой*/
+/* на кнопке должен быть хвер и фокус, но я в фигме не нашел какой*/
 /*.modal-btn:hover,
 .modal-btn:focus {}. поэтому задаю пока томато*/
 
@@ -136,9 +139,7 @@
 
 
 /*========================/HERO============================*/
-/* на кнопке должен быть хвер и фокус, но мы пока не знаем какой*/
-/*.modal-btn:hover,
-.modal-btn:focus {}*/
+
 
 /*=========Особенности(features)=========*/
 .features-list-title {
@@ -215,9 +216,59 @@
 
 }
 
-
-
-
-
-
 /*===========/Footer=================*/
+
+
+/*=====================================Portfolio============================================*/
+/*Заголовок будет скрыт, поэтому применил параметры с Н1 главной страницы*/
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--logo-black-color)
+}
+
+.nav-btn {
+    /*========================Кнопки навигации по портфолио========================*/
+    /*Странно, но почему-то кнопка не наследует свойства*/
+
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    cursor: pointer;
+    color: var(--primary-text-color);
+
+}
+
+.nav-btn:focus,
+.nav-btn:hover {
+    color: var(--white-color);
+    background: var(--acent-color);
+}
+
+/*=========================Выполненные проекты=========================*/
+.portfolio-list-title {
+
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-list-text {
+
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--secondary-text-color);
+}
+
+
+/*===========/Portfolio=================*/
